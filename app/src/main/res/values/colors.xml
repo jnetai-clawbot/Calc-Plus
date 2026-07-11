@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF1A1A2E</color>
+    <color name="primaryDark">#FF0F0F1A</color>
+    <color name="accent">#FF00D4FF</color>
+    <color name="background">#FF12121F</color>
+    <color name="surface">#FF1E1E32</color>
+    <color name="surfaceLight">#FF2A2A40</color>
+    <color name="onPrimary">#FFFFFFFF</color>
+    <color name="onBackground">#FFE0E0E0</color>
+    <color name="onSurface">#FFCCCCCC</color>
+    <color name="error">#FFFF4444</color>
+    <color name="success">#FF00E676</color>
+    <color name="warning">#FFFFAB40</color>
+    <color name="buttonNumber">#FF2A2A40</color>
+    <color name="buttonOperator">#FF00D4FF</color>
+    <color name="buttonEquals">#FF00E676</color>
+    <color name="buttonClear">#FFFF4444</color>
+    <color name="buttonText">#FFFFFFFF</color>
+    <color name="displayText">#FFFFFFFF</color>
+    <color name="displayBackground">#FF0A0A14</color>
+    <color name="divider">#FF333355</color>
+    <color name="cardBackground">#FF1E1E32</color>
+    <color name="inputBackground">#FF2A2A40</color>
+</resources>

@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jnetai.calcplus'
+    compileSdk 34
+
+    signingConfigs {
+        release {
+            storeFile file("calcplus-release-keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "calcplus123"
+            keyAlias "calcplus"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "calcplus123"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.jnetai.calcplus"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+    implementation 'com.google.android.gms:play-services-drive:17.0.0'
+    implementation 'com.google.api-client:google-api-client-android:2.2.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.43.3'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.microsoft.identity.client:msal:4.10.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

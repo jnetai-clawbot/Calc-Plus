@@ -1,0 +1,33 @@
+Calc-Plus Changes Log
+=====================
+
+v1.0.0 - Initial Release
+-------------------------
+- Created Android project structure with Gradle build system
+- Implemented full calculator UI with standard operations (+, -, x, /, %, ±)
+- Implemented hidden vault access via Vault button on calculator
+- Implemented PIN-based authentication with SHA-256 hashing and salt
+- Default PIN: 12345678 (forces change on first use)
+- Implemented encrypted vault storage using AES-256-GCM
+- PBKDF2 key derivation with 100,000 iterations
+- Secure preferences using EncryptedSharedPreferences
+- File/folder storage with encryption
+- Secure notes with encryption
+- Import files from device storage into vault
+- Export files from vault to device storage
+- File operations: move, copy, delete, rename
+- Folder navigation and management
+- Search functionality for files, folders, and notes
+- Encrypted backup creation and restoration
+- Google Drive backup support
+- OneDrive backup support
+- Share backup via any app (Telegram, email, etc.)
+- Self-destruct security: destroys all data after configurable failed PIN attempts
+- Configurable max failed attempts (1-20, default 10)
+- Settings screen: change PIN, adjust self-destruct, reset vault
+- About screen with version info, update check, share app
+- Dark themed UI with professional design
+- GitHub Actions workflow for automated APK builds
+- Persistent error handling and logging throughout
+- Compatible with Android 8.0+ (Samsung S8, Google Pixel 6+)
+- Made by jnetai.com

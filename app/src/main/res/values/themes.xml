@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CalcPlus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <item name="android:navigationBarColor">@color/primaryDark</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/onBackground</item>
+        <item name="android:textColorPrimary">@color/onBackground</item>
+        <item name="android:textColorSecondary">@color/onSurface</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorOnSecondary">@color/onPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/buttonText</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="CalcButton.Number" parent="CalcButton">
+        <item name="backgroundTint">@color/buttonNumber</item>
+    </style>
+
+    <style name="CalcButton.Operator" parent="CalcButton">
+        <item name="backgroundTint">@color/buttonOperator</item>
+    </style>
+
+    <style name="CalcButton.Equals" parent="CalcButton">
+        <item name="backgroundTint">@color/buttonEquals</item>
+    </style>
+
+    <style name="CalcButton.Clear" parent="CalcButton">
+        <item name="backgroundTint">@color/buttonClear</item>
+    </style>
+
+    <style name="CalcButton.Function" parent="CalcButton">
+        <item name="backgroundTint">@color/surfaceLight</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

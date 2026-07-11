@@ -1,0 +1,118 @@
+Calc-Plus - Usage Instructions
+===============================
+
+OVERVIEW
+--------
+Calc+ is a fully functional calculator that also serves as a hidden encrypted
+vault for storing files, folders, and secure notes. The vault is protected by
+a PIN code and all stored data is encrypted using AES-256-GCM encryption.
+
+DEFAULT PIN
+-----------
+The default PIN is: 12345678
+You MUST change this PIN on first use for security.
+
+HOW TO USE THE CALCULATOR
+-------------------------
+- The app opens as a normal calculator with all standard operations.
+- Use the number buttons (0-9) for input.
+- Operators: + (add), - (subtract), x (multiply), / (divide)
+- = (equals) to calculate the result.
+- C (clear) to reset the calculator.
+- Backspace button to delete the last digit.
+- +/- to toggle positive/negative.
+- % to convert to percentage.
+- . for decimal point.
+
+HOW TO ACCESS THE HIDDEN VAULT
+------------------------------
+1. Open the Calc+ app (it looks like a normal calculator).
+2. Tap the "Vault" button at the top of the calculator.
+3. The display will show "Enter PIN to access vault".
+4. Enter your PIN using the number buttons.
+5. Press "=" to submit the PIN.
+6. On first use with the default PIN (12345678), you will be taken to
+   Settings where you MUST set a new PIN.
+
+SETTING A NEW PIN
+-----------------
+1. After entering the default PIN, you'll see the Settings screen.
+2. Tap "Change PIN".
+3. Enter a new PIN (minimum 4 digits).
+4. Confirm the new PIN by entering it again.
+5. Tap "Save". The PIN is now updated.
+6. You will be logged out. Enter your new PIN to access the vault.
+
+VAULT FEATURES
+--------------
+Once inside the vault, you can:
+
+- View Files: Browse your encrypted files and folders.
+- View Notes: Tap "Notes" to switch to notes view.
+- New Note: Create a new encrypted text note.
+- New Folder: Create a new folder in the vault.
+- Import: Import files from your device storage into the encrypted vault.
+- Export: Export files from the vault back to device storage.
+- Search: Use the search box to find files, folders, or notes by name.
+- Long-press items: Shows options to Open, Move, Copy, Rename, Delete, or Export.
+
+BACKUP AND RESTORE
+------------------
+- Tap "Backup" in the vault for backup options:
+  - Create Backup: Save an encrypted backup file to your device.
+  - Restore Backup: Restore a previously created backup (requires correct PIN).
+  - Save to Google Drive: Save backup directly to Google Drive.
+  - Save to OneDrive: Save backup directly to OneDrive.
+  - Share Backup: Share the backup file via any app (Telegram, email, etc.).
+
+IMPORTANT: Backups are encrypted with your current PIN. You can restore a
+backup on another device as long as you use the same PIN.
+
+SELF-DESTRUCT SECURITY
+----------------------
+- If the PIN is entered incorrectly too many times, all encrypted data is
+  permanently destroyed.
+- Default maximum failed attempts: 10
+- You can change this in Settings (1-20 attempts).
+- WARNING: Self-destruct is irreversible. All data will be lost.
+
+SETTINGS
+--------
+Access Settings from the vault screen:
+- Change PIN: Set a new PIN code.
+- Failed attempts before self-destruct: Adjust the number of allowed
+  failed PIN attempts (1-20).
+- Reset Calc+ Storage: Permanently deletes ALL encrypted data and resets
+  the app to factory state.
+
+ABOUT SCREEN
+------------
+- Shows the app version number.
+- "Made by jnetai.com"
+- Check for Update: Checks GitHub for the latest release version.
+- Share App: Share the app download link with others.
+
+SECURITY NOTES
+--------------
+- All files, folders, and notes are encrypted with AES-256-GCM using your PIN.
+- The PIN is never stored - only a salted SHA-256 hash is kept.
+- Encryption keys are derived using PBKDF2 with 100,000 iterations.
+- Backups are encrypted and can only be restored with the correct PIN.
+- No data is sent to any server. Everything stays on your device.
+
+TROUBLESHOOTING
+---------------
+- Forgot PIN? There is NO way to recover your PIN. You must reset the vault
+  (Settings > Reset Calc+ Storage) which will delete all data.
+- App crashes? Clear app data from Android Settings and reinstall.
+- Backup won't restore? Make sure you're using the same PIN that was used
+  when the backup was created.
+
+COMPATIBILITY
+-------------
+- Android 8.0 (Oreo) and above
+- Tested on Samsung S8 and newer, Google Pixel 6 and newer
+- Minimum SDK: 26 (Android 8.0)
+- Target SDK: 34 (Android 14)
+
+Made by jnetai.com
