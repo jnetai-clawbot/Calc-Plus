@@ -3,3 +3,7 @@
 -keep class com.jnetai.calcplus.** { *; }
 -dontwarn com.google.api.client.**
 -dontwarn com.google.api.services.drive.**
+-dontwarn javax.annotation.**
+-dontwarn javax.annotation.concurrent.**
+-dontwarn com.google.crypto.tink.**
+-keep class com.google.crypto.tink.** { *; }
