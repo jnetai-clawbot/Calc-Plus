@@ -2,8 +2,6 @@
 *.keystore
 *.p12
 *.key
-*.apk
-apk/
 .gradle/
 build/
 app/build/
