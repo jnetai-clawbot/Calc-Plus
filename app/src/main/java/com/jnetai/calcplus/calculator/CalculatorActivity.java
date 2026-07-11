@@ -14,6 +14,7 @@ import com.jnetai.calcplus.R;
 import com.jnetai.calcplus.settings.SettingsActivity;
 import com.jnetai.calcplus.util.CryptoUtils;
 import com.jnetai.calcplus.util.SecurePrefs;
+import com.jnetai.calcplus.util.VaultManager;
 import com.jnetai.calcplus.vault.VaultActivity;
 
 import java.math.BigDecimal;

@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.jnetai.calcplus.BuildConfig;
 import com.jnetai.calcplus.R;
 
 import org.json.JSONObject;
@@ -22,6 +21,7 @@ import java.net.URL;
 
 public class AboutActivity extends AppCompatActivity {
     private static final String TAG = "CalcPlus_About";
+    private static final String CURRENT_VERSION = "1.0.0";
     private static final String GITHUB_API_URL = "https://api.github.com/repos/jnetai-clawbot/Calc-Plus/releases/latest";
     private static final String GITHUB_RELEASES_URL = "https://github.com/jnetai-clawbot/Calc-Plus/releases";
 
@@ -37,7 +37,7 @@ public class AboutActivity extends AppCompatActivity {
         versionText = findViewById(R.id.versionText);
         updateStatusText = findViewById(R.id.updateStatusText);
 
-        versionText.setText("Version " + BuildConfig.VERSION_NAME);
+        versionText.setText("Version " + CURRENT_VERSION);
 
         findViewById(R.id.btnCheckUpdate).setOnClickListener(v -> checkForUpdate());
         findViewById(R.id.btnShareApp).setOnClickListener(v -> shareApp());
@@ -74,7 +74,7 @@ public class AboutActivity extends AppCompatActivity {
                         latestVersion = latestVersion.substring(1);
                     }
 
-                    String currentVersion = BuildConfig.VERSION_NAME;
+                    String currentVersion = CURRENT_VERSION;
                     runOnUiThread(() -> {
                         if (!currentVersion.equals(latestVersion)) {
                             updateStatusText.setText("Update Available: v" + latestVersion);
