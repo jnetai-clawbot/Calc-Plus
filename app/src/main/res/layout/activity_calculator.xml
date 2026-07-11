@@ -49,13 +49,13 @@
         android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnVault"
+            android:id="@+id/btnAC"
             style="@style/CalcButton.Function"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_weight="1"
-            android:text="Vault"
-            android:onClick="onVaultButtonClick"
+            android:text="AC"
+            android:onClick="onACButtonClick"
             android:textAllCaps="false" />
 
         <com.google.android.material.button.MaterialButton

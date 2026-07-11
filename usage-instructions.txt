@@ -27,11 +27,12 @@ HOW TO USE THE CALCULATOR
 HOW TO ACCESS THE HIDDEN VAULT
 ------------------------------
 1. Open the Calc+ app (it looks like a normal calculator).
-2. Tap the "Vault" button at the top of the calculator.
-3. The display will show "Enter PIN to access vault".
-4. Enter your PIN using the number buttons.
-5. Press "=" to submit the PIN.
-6. On first use with the default PIN (12345678), you will be taken to
+2. Tap the "AC" (All Clear) button at the top of the calculator.
+   This clears the display like a normal AC button would.
+3. The display resets to 0. Now enter your PIN using the number buttons.
+   (There is NO prompt - it looks like you're just typing numbers.)
+4. Press "=" to submit the PIN.
+5. On first use with the default PIN (12345678), you will be taken to
    Settings where you MUST set a new PIN.
 
 SETTING A NEW PIN

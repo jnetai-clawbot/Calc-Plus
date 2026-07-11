@@ -21,7 +21,7 @@ import java.net.URL;
 
 public class AboutActivity extends AppCompatActivity {
     private static final String TAG = "CalcPlus_About";
-    private static final String CURRENT_VERSION = "1.0.0";
+    private static final String CURRENT_VERSION = "1.0.1";
     private static final String GITHUB_API_URL = "https://api.github.com/repos/jnetai-clawbot/Calc-Plus/releases/latest";
     private static final String GITHUB_RELEASES_URL = "https://github.com/jnetai-clawbot/Calc-Plus/releases";
 

@@ -1,6 +1,14 @@
 Calc-Plus Changes Log
 =====================
 
+v1.0.1 - Stealth Update
+------------------------
+- Renamed "Vault" button to "AC" (All Clear) for stealth
+- AC button clears the display like a normal calculator AC button
+- Removed "Enter PIN" prompt - vault mode is completely silent
+- No visual indication that PIN entry mode is active
+- Updated usage instructions for stealthy access method
+
 v1.0.0 - Initial Release
 -------------------------
 - Created Android project structure with Gradle build system

@@ -1,0 +1,7 @@
+
+It all works but its obvious what it is, lets make it more sly, instead of the word on the main calculator screen "Vault" lets call it "AC" (for all clear) then when pressed clear any number(s) on the calc line (do not say enter pin) just know once AC is pressed then correct pin entered then = it should go into Vault Mode, update the instructions after making changes.
+
+update files and build on github actions / workflows (update the Version in about to match github full tag version and release with same key-store so app can update
+
+let me know when ready to test the new release.
+

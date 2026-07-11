@@ -378,7 +378,20 @@ public class CalculatorActivity extends AppCompatActivity {
         }
     }
 
-    public void onVaultButtonClick(View view) {
+    public void onACButtonClick(View view) {
+        if (!vaultMode) {
+            currentInput.setLength(0);
+            currentInput.append("0");
+            expression.setLength(0);
+            currentOperator = "";
+            firstOperand = 0;
+            secondOperand = 0;
+            operatorPressed = false;
+            equalsPressed = false;
+            decimalUsed = false;
+            updateDisplay();
+            expressionText.setText("");
+        }
         toggleVaultMode();
     }
 
@@ -387,7 +400,7 @@ public class CalculatorActivity extends AppCompatActivity {
         pinBuffer.setLength(0);
         if (vaultMode) {
             displayText.setText("0");
-            expressionText.setText(R.string.pin_prompt);
+            expressionText.setText("");
             findViewById(R.id.btnEquals).setBackgroundTintList(
                     android.content.res.ColorStateList.valueOf(getColor(R.color.accent)));
         } else {
