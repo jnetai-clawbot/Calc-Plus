@@ -57,18 +57,16 @@ jobs:
           value: ${{ env.NEW_KEYSTORE_BASE64 }}
           pa_token: ${{ secrets.GH_PAT }}
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew || true
+      - name: Setup Gradle
+        run: |
+          gradle wrapper --gradle-version 8.5
+          chmod +x gradlew
 
       - name: Build with Gradle
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-        run: |
-          if [ ! -f gradlew ]; then
-            gradle wrapper --gradle-version 8.5
-          fi
-          ./gradlew assembleRelease --no-daemon
+        run: ./gradlew assembleRelease --no-daemon
 
       - name: Find APK
         id: find_apk
